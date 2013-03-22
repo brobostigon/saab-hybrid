@@ -3,7 +3,7 @@ int y=0;
 int z=0;
 int q=0;
 int f=0;
-int led = 31;
+int led = 53;
 
 void setup() {
   // put your setup code here, to run once:
@@ -22,7 +22,7 @@ void loop() {
   Serial.println(x);
   Serial.println(f);
   digitalWrite(led, HIGH);
-  delay(1000);
+  delay(500);
   digitalWrite(led, LOW);
   delay(500);
 }
