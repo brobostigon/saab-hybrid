@@ -5,14 +5,12 @@ int q=0;
 int f=0;
 int led = 53;
 
-void setup() {
-  // put your setup code here, to run once:
+void setup() {  
   Serial.begin(115200);
   pinMode(led, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly: 
   q = random(50);
   y = random(51, 100);
   z = random(101, 200);
