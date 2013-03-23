@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+
 int I = 0;
 int Ib = 0;
 int Ix = 0;

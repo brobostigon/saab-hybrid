@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+
 int I = 0;
 int Ib = 0;
 int Ix = 0;
@@ -32,8 +32,10 @@ void loop() {
   Nex = analogRead(enginespeed);
   val = analogRead(VR);
 
-  y = 0;
 goto1:
+
+  y = 0;
+
   if ((Nex >= ne[y]) && (Nex <= ne[y+1])) 
   {
     goto goto2;
@@ -51,9 +53,10 @@ goto2:
   Nea = ne[y];
   Neb = ne[y + 1];  
 
-  if (y >= 6) 
+  if (y >= 6)
   {
-    (y = 0) && (goto goto1);
+    (y = 0);
+    goto goto1;
   }
 
   digitalWrite(PF, HIGH);
@@ -65,6 +68,7 @@ goto2:
   Serial.println(val);
   Serial.println(Nex);
 }
+
 
 
 
