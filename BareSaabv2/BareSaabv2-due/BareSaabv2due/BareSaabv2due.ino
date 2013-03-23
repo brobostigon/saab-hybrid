@@ -55,7 +55,7 @@ goto2:
 
   if (y >= 6)
   {
-    (y = 0);
+    y = 0;
     goto goto1;
   }
 
