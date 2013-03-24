@@ -29,6 +29,9 @@ void setup() {
 }
 
 void loop() {  
+
+  analogReadResolution(12);
+
   Nex = analogRead(enginespeed);
   val = analogRead(VR);
 
