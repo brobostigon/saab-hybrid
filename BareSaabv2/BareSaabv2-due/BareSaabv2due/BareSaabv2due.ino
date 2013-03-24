@@ -24,7 +24,7 @@ void setup() {
 
   Serial.begin(115200);
 
-  pinMode(VR, OUTPUT);
+  pinMode(PF, OUTPUT);
 
 }
 
