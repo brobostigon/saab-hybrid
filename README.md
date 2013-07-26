@@ -7,4 +7,6 @@ Hopefully soon there will be some new additions, maybe.
 
 Added a revision of the previous code, with adaptions for the new arduino Due. :)
 
+more addidtions very soon.
+
 PMT
