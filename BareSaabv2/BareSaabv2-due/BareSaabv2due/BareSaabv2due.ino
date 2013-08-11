@@ -11,9 +11,11 @@ int Ney = 0;
 int y = 0;
 
 int enginespeed = 10;
-int PF = 8;
+int PF = 22;
 int VR = 4;
 int val = 0;
+
+int motorcontrol = 26
 
 int ne[] = {
   0,1000,2000,3000,4000,5000};
@@ -25,6 +27,8 @@ void setup() {
   Serial.begin(115200);
 
   pinMode(PF, OUTPUT);
+  
+  pinmode(motorcontrol, OUTPUT);
 
 }
 
@@ -66,7 +70,8 @@ goto2:
   delay (val / 100);
   digitalWrite(PF, LOW);
   delay ((1023 - val) / 100);
-
+  
+ 
 
   Serial.println(val);
   Serial.println(Nex);
