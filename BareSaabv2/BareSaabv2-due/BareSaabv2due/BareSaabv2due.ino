@@ -1,4 +1,3 @@
-
 int I = 0;
 int Ib = 0;
 int Ix = 0;
@@ -15,7 +14,9 @@ int PF = 22;
 int VR = 4;
 int val = 0;
 
-int motorcontrol = 26
+int motorcontrol = 26;
+
+int lpaccuvalve  = 51;
 
 int ne[] = {
   0,1000,2000,3000,4000,5000};
@@ -25,6 +26,8 @@ int ip[] = {
 void setup() {
 
   Serial.begin(115200);
+
+  pinMode(lpaccuvalve, OUTPUT);
 
   pinMode(PF, OUTPUT);
   
