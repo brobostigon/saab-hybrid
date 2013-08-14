@@ -75,6 +75,11 @@ goto2:
   delay ((1023 - val) / 100);
   
  
+  digitalWrite(lpaccuvalve, HIGH);
+  delay (val / 100);
+  digitalWrite(lpaccuvalve, LOW);
+  delay ((1023 - val) / 100);
+ 
 
   Serial.println(val);
   Serial.println(Nex);
