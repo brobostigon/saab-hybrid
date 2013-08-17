@@ -76,11 +76,13 @@ goto2:
   
  
   digitalWrite(lpaccuvalve, HIGH);
-  delay (val / 100);
-  digitalWrite(lpaccuvalve, LOW);
-  delay ((1023 - val) / 100);
- 
-
+  delay (1023);
+  digitalWrite(PF, LOW);
+  
+  digitalWrite(motorcontrol, HIGH);
+  delay(1023);
+  digitalWrite(motorcontrol, LOW);
+  
   Serial.println(val);
   Serial.println(Nex);
 }
